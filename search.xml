@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2021/06/14/a/</url>
-    <content><![CDATA[<p>wdf</p>
+    <title>Minecraft 开服教程</title>
+    <url>/2021/06/14/Minecraft-%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>众所周知，开一个服务器是非常简单的qwq<br>只需要 一个核心 一句命令  </p>
+<p>开服的第一步就是选好核心，这里推荐的镜像站有<a href="http://www.tcotp.cn/">www.tcotp.cn</a>  </p>
+<span id="more"></span>
+<p>我个人比较喜欢PaperSpigot  </p>
+<p>下载完后，将核心放进一个单独的目录<br>然后右键-&gt;新建-&gt;txt文本文档-&gt;右键-&gt;重命名-&gt;命名为Start.bat（没有后缀名”.txt”的自行百度）<br>Start.bat里面写入如下内容:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java -Xmx &#123;Max_memory&#125; -jar &#123;corename&#125; nogui</span><br></pre></td></tr></table></figure>
+<p>其中，{Max_memory}处填写服务器最大内存，比如1G,1500M，{corename}处填写核心名字，比如paper.jar</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java -Xmx 3G -jar paper.jar nogui</span><br></pre></td></tr></table></figure>
+<p>这句示例运行后会启动一个最大内存3GB，核心名为paper.jar的服务器（注意，核心要和这个批处理文件<strong>处于同一目录！</strong>）</p>
+<p>写完后保存，双击运行，就可以开服啦qwq</p>
 ]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Minecraft 服务器配置</title>
+    <url>/2021/06/14/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>上次我们讲了怎么开服</p>
+]]></content>
+      <categories>
+        <category>Server</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+        <tag>Minecraft</tag>
+      </tags>
   </entry>
 </search>
