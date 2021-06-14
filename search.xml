@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Minecraft 服务器配置</title>
-    <url>/2021/06/14/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>上次我们讲了怎么开服</p>
-]]></content>
-      <categories>
-        <category>Minecraft_Server</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-        <tag>Minecraft</tag>
-        <tag>Config</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Minecraft 开服教程</title>
     <url>/2021/06/14/Minecraft-%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>众所周知，开一个服务器是非常简单的qwq<br>只需要 一个核心 一句命令  </p>
@@ -34,6 +20,27 @@
       <tags>
         <tag>Server</tag>
         <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Minecraft 服务器配置</title>
+    <url>/2021/06/14/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器<br>上次有一点没有讲到的地方…  </p>
+<span id="more"></span>
+<p>第一次开服一定会失败，失败后，需要打开目录下的eula.txt，将里面的eula=false改为eula=true，表示你同意了eula协议，然后重启服务器即可生成世界</p>
+<p>第二次开服后，应该会出现一个文件，叫做<code>server.properties</code>，这是服务器的配置文件</p>
+<p>第一次生成的内容应该和下面的差不多（此处以1.16.4版本为准，下面的词法分析器有问题，别管他）  </p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Minecraft server properties</span></span><br><span class="line"><span class="comment">#Fri Jun 11 20:43:29 CST 2021</span></span><br><span class="line"><span class="meta">spawn-protection</span>=<span class="string">16</span></span><br><span class="line"><span class="meta">max-tick-time</span>=<span class="string">60000</span></span><br><span class="line"><span class="meta">query.port</span>=<span class="string">25565</span></span><br><span class="line"><span class="meta">generator-settings</span>=<span class="string"></span></span><br><span class="line"><span class="meta">sync-chunk-writes</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">force-gamemode</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">allow-nether</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">enforce-whitelist</span>=<span class="string">false</span></span><br><span class="line"><span class="attr">gamemode</span>=<span class="string">survival</span></span><br><span class="line"><span class="meta">broadcast-console-to-ops</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">enable-query</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">player-idle-timeout</span>=<span class="string">0</span></span><br><span class="line"><span class="meta">text-filtering-config</span>=<span class="string"></span></span><br><span class="line"><span class="attr">difficulty</span>=<span class="string">easy</span></span><br><span class="line"><span class="meta">broadcast-rcon-to-ops</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">spawn-monsters</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">op-permission-level</span>=<span class="string">4</span></span><br><span class="line"><span class="attr">pvp</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">entity-broadcast-range-percentage</span>=<span class="string">100</span></span><br><span class="line"><span class="meta">snooper-enabled</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">level-type</span>=<span class="string">default</span></span><br><span class="line"><span class="meta">enable-status</span>=<span class="string">true</span></span><br><span class="line"><span class="attr">hardcore</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">enable-command-block</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">network-compression-threshold</span>=<span class="string">256</span></span><br><span class="line"><span class="meta">max-players</span>=<span class="string">20</span></span><br><span class="line"><span class="meta">max-world-size</span>=<span class="string">29999984</span></span><br><span class="line"><span class="meta">resource-pack-sha1</span>=<span class="string"></span></span><br><span class="line"><span class="meta">function-permission-level</span>=<span class="string">2</span></span><br><span class="line"><span class="meta">rcon.port</span>=<span class="string">25575</span></span><br><span class="line"><span class="meta">server-port</span>=<span class="string">25565</span></span><br><span class="line"><span class="attr">debug</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">server-ip</span>=<span class="string"></span></span><br><span class="line"><span class="meta">spawn-npcs</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">allow-flight</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">level-name</span>=<span class="string">world</span></span><br><span class="line"><span class="meta">view-distance</span>=<span class="string">10</span></span><br><span class="line"><span class="meta">resource-pack</span>=<span class="string"></span></span><br><span class="line"><span class="meta">spawn-animals</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">white-list</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">rcon.password</span>=<span class="string"></span></span><br><span class="line"><span class="meta">generate-structures</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">online-mode</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">max-build-height</span>=<span class="string">256</span></span><br><span class="line"><span class="meta">level-seed</span>=<span class="string"></span></span><br><span class="line"><span class="meta">prevent-proxy-connections</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">use-native-transport</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">enable-jmx-monitoring</span>=<span class="string">false</span></span><br><span class="line"><span class="attr">motd</span>=<span class="string">A Minecraft Server</span></span><br><span class="line"><span class="meta">rate-limit</span>=<span class="string">0</span></span><br><span class="line"><span class="meta">enable-rcon</span>=<span class="string">false</span></span><br></pre></td></tr></table></figure>
+<p>这里我们只讲解其中的几项<br><code>allow-nether</code>，这个选项设为false后不会生成下界<br><code>enforce-whitelist</code>，强制白名单，设为true后不在白名单中的人<strong>无法进入服务器</strong><br><code>gamemode</code>，默认游戏模式，默认值为survival，可以改为creative设置默认创造模式<br><code>difficulty</code>，难度，默认为easy<br><code>op-permission-level</code>，op权限等级，有1~4级，具体权限自行百度<br><code>pvp</code>，是否允许pvp（玩家互相伤害），true是允许，false是禁止<br><code>view-distance</code>，玩家最远的视距，建议3左右，太大会导致卡顿<br><code>max-players</code>，服务器最大人数<br><code>online-mode</code>，正版验证，默认开启（true），非正版登录玩家无法登录游戏，若设为false，则允许离线登录玩家进入<br><code>motd</code>，添加服务器后显示在名称下的描述</p>
+<p>大致的重要配置就这几项，照着需求修改即可qwq</p>
+]]></content>
+      <categories>
+        <category>Minecraft_Server</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+        <tag>Minecraft</tag>
+        <tag>Config</tag>
       </tags>
   </entry>
 </search>
