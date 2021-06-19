@@ -22,25 +22,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HashMap</title>
-    <url>/2021/06/14/HashMap/</url>
-    <content><![CDATA[<h4 id="特点简述"><a href="#特点简述" class="headerlink" title="特点简述"></a>特点简述</h4><p>在冒烟的Java中，有一种集合叫做HashMap  </p>
-<span id="more"></span>
-<p>它拥有极快的速度，以一键对应一值的方式存储数据<br>非常适合大型数据处理<br>它的一个键下只能有1个值<br>若键重复，新的值会覆盖旧的值<br>需要import一个包<code>import java.util.HashMap</code><br>创建一个HashMap的实例也很简单：  </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">HashMap&lt;<span class="keyword">int</span>,string&gt; mp = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
-<p>这样就能新建一个int键对应string值的一个HashMap </p>
-<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>1、puts(key,value) 这个方法会添加一对键为key值为value的数据<br>2、get(key) 用key来查找value<br>3、remove(key) 删除键为key的数据<br>4、containsKey(key) HashMap中是否存在一个键为key的数据<br>5、containsValue(Value) HashMap中是否存在一个值为Value的数据</p>
-<p>这个数据类型非常适合做登录和交易插件<br>下一次，我们讲一个交易插件的实例<br>就讲到这里，再见qwq</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>集合</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Minecraft 服务器配置</title>
     <url>/2021/06/13/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器<br>上次有一点没有讲到的地方…</p>
@@ -59,6 +40,25 @@
         <tag>Server</tag>
         <tag>Minecraft</tag>
         <tag>Config</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HashMap</title>
+    <url>/2021/06/14/HashMap/</url>
+    <content><![CDATA[<h4 id="特点简述"><a href="#特点简述" class="headerlink" title="特点简述"></a>特点简述</h4><p>在冒烟的Java中，有一种集合叫做HashMap  </p>
+<span id="more"></span>
+<p>它拥有极快的速度，以一键对应一值的方式存储数据<br>非常适合大型数据处理<br>它的一个键下只能有1个值<br>若键重复，新的值会覆盖旧的值<br>需要import一个包<code>import java.util.HashMap</code><br>创建一个HashMap的实例也很简单：  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">HashMap&lt;<span class="keyword">int</span>,string&gt; mp = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
+<p>这样就能新建一个int键对应string值的一个HashMap </p>
+<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>1、puts(key,value) 这个方法会添加一对键为key值为value的数据<br>2、get(key) 用key来查找value<br>3、remove(key) 删除键为key的数据<br>4、containsKey(key) HashMap中是否存在一个键为key的数据<br>5、containsValue(Value) HashMap中是否存在一个值为Value的数据</p>
+<p>这个数据类型非常适合做登录和交易插件<br>下一次，我们讲一个交易插件的实例<br>就讲到这里，再见qwq</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>集合</tag>
       </tags>
   </entry>
   <entry>
