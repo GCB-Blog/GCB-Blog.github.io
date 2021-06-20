@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gcb-blog.github.io/playlist/index.html</loc>
+    
+    <lastmod>2021-06-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gcb-blog.github.io/2021/06/14/HashMap/</loc>
     
     <lastmod>2021-06-15</lastmod>
@@ -53,50 +60,50 @@
 
   <url>
     <loc>http://gcb-blog.github.io/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://gcb-blog.github.io/tags/Server/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gcb-blog.github.io/tags/Minecraft/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gcb-blog.github.io/tags/Config/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gcb-blog.github.io/tags/Java/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://gcb-blog.github.io/tags/%E9%9B%86%E5%90%88/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <lastmod>2021-06-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gcb-blog.github.io/tags/Server/</loc>
+    <lastmod>2021-06-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gcb-blog.github.io/tags/Minecraft/</loc>
+    <lastmod>2021-06-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gcb-blog.github.io/tags/Config/</loc>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://gcb-blog.github.io/tags/Cpp/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -104,22 +111,22 @@
 
   
   <url>
-    <loc>http://gcb-blog.github.io/categories/Minecraft-Server/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <loc>http://gcb-blog.github.io/categories/Java/</loc>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://gcb-blog.github.io/categories/Java/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <loc>http://gcb-blog.github.io/categories/Minecraft-Server/</loc>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://gcb-blog.github.io/categories/Cpp/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <lastmod>2021-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

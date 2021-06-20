@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HashMap</title>
+    <url>/2021/06/14/HashMap/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="特点简述"><a href="#特点简述" class="headerlink" title="特点简述"></a>特点简述</h4><p>在冒烟的Java中，有一种集合叫做HashMap  </p>
+<span id="more"></span>
+<p>它拥有极快的速度，以一键对应一值的方式存储数据<br>非常适合大型数据处理<br>它的一个键下只能有1个值<br>若键重复，新的值会覆盖旧的值<br>需要import一个包<code>import java.util.HashMap</code><br>创建一个HashMap的实例也很简单：  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">HashMap&lt;<span class="keyword">int</span>,string&gt; mp = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
+<p>这样就能新建一个int键对应string值的一个HashMap </p>
+<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>1、puts(key,value) 这个方法会添加一对键为key值为value的数据<br>2、get(key) 用key来查找value<br>3、remove(key) 删除键为key的数据<br>4、containsKey(key) HashMap中是否存在一个键为key的数据<br>5、containsValue(Value) HashMap中是否存在一个值为Value的数据</p>
+<p>这个数据类型非常适合做登录和交易插件<br>下一次，我们讲一个交易插件的实例<br>就讲到这里，再见qwq</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>集合</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Minecraft 开服教程</title>
     <url>/2021/06/13/Minecraft-%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>众所周知，开一个服务器是非常简单的qwq<br>只需要 一个核心 一句命令  </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>众所周知，开一个服务器是非常简单的qwq<br>只需要 一个核心 一句命令  </p>
 <span id="more"></span>
 <p>开服的第一步就是选好核心，这里推荐的镜像站有<a href="http://www.tcotp.cn/">www.tcotp.cn</a><br>我个人比较喜欢PaperSpigot  </p>
 <p>下载完后，将核心放进一个单独的目录<br>然后右键-&gt;新建-&gt;txt文本文档-&gt;右键-&gt;重命名-&gt;命名为Start.bat（没有后缀名”.txt”的自行百度）<br>Start.bat里面写入如下内容:</p>
@@ -24,7 +43,7 @@
   <entry>
     <title>Minecraft 服务器配置</title>
     <url>/2021/06/13/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器<br>上次有一点没有讲到的地方…</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器<br>上次有一点没有讲到的地方…</p>
 <span id="more"></span>
 <p>第一次开服一定会失败，失败后，需要打开目录下的eula.txt，将里面的eula=false改为eula=true，表示你同意了eula协议，然后重启服务器即可生成世界</p>
 <p>第二次开服后，应该会出现一个文件，叫做<code>server.properties</code>，这是服务器的配置文件</p>
@@ -43,28 +62,9 @@
       </tags>
   </entry>
   <entry>
-    <title>HashMap</title>
-    <url>/2021/06/14/HashMap/</url>
-    <content><![CDATA[<h4 id="特点简述"><a href="#特点简述" class="headerlink" title="特点简述"></a>特点简述</h4><p>在冒烟的Java中，有一种集合叫做HashMap  </p>
-<span id="more"></span>
-<p>它拥有极快的速度，以一键对应一值的方式存储数据<br>非常适合大型数据处理<br>它的一个键下只能有1个值<br>若键重复，新的值会覆盖旧的值<br>需要import一个包<code>import java.util.HashMap</code><br>创建一个HashMap的实例也很简单：  </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">HashMap&lt;<span class="keyword">int</span>,string&gt; mp = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
-<p>这样就能新建一个int键对应string值的一个HashMap </p>
-<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>1、puts(key,value) 这个方法会添加一对键为key值为value的数据<br>2、get(key) 用key来查找value<br>3、remove(key) 删除键为key的数据<br>4、containsKey(key) HashMap中是否存在一个键为key的数据<br>5、containsValue(Value) HashMap中是否存在一个值为Value的数据</p>
-<p>这个数据类型非常适合做登录和交易插件<br>下一次，我们讲一个交易插件的实例<br>就讲到这里，再见qwq</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>集合</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>set集合</title>
     <url>/2021/06/14/set%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<h4 id="特点简述"><a href="#特点简述" class="headerlink" title="特点简述"></a>特点简述</h4><p>在奇妙的C++中，有一种奇妙的集合，叫做set  </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="特点简述"><a href="#特点简述" class="headerlink" title="特点简述"></a>特点简述</h4><p>在奇妙的C++中，有一种奇妙的集合，叫做set  </p>
 <span id="more"></span>
 <p>他的定义方法如下：</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">set&lt;<span class="keyword">int</span>&gt; s;</span><br></pre></td></tr></table></figure>
