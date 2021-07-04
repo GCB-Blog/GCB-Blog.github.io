@@ -20,23 +20,24 @@
     var CONFIG = {"hostname":"gcb-blog.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器上次有一点没有讲到的地方…">
+  <meta name="description" content="啊吧啊吧，好像缺了点密码，输了密码再看吧">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Minecraft 服务器配置">
-<meta property="og:url" content="http://gcb-blog.github.io/2021/06/13/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="交易菜单(1) - HashMap的应用">
+<meta property="og:url" content="http://gcb-blog.github.io/2021/06/26/%E4%BA%A4%E6%98%93%E6%8F%92%E4%BB%B6%E5%AE%9E%E4%BE%8B/index.html">
 <meta property="og:site_name" content="GCB的妙妙屋">
-<meta property="og:description" content="上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器上次有一点没有讲到的地方…">
+<meta property="og:description" content="啊吧啊吧，好像缺了点密码，输了密码再看吧">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-13T09:41:00.000Z">
-<meta property="article:modified_time" content="2021-06-26T14:26:21.721Z">
+<meta property="article:published_time" content="2021-06-26T14:21:00.000Z">
+<meta property="article:modified_time" content="2021-07-04T14:33:49.329Z">
 <meta property="article:author" content="Minecraft.GCB">
-<meta property="article:tag" content="Server">
+<meta property="article:tag" content="Java">
 <meta property="article:tag" content="Minecraft">
 <meta property="article:tag" content="Tutorials">
-<meta property="article:tag" content="Config">
+<meta property="article:tag" content="Plugin">
+<meta property="article:tag" content="Development">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://gcb-blog.github.io/2021/06/13/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">
+<link rel="canonical" href="http://gcb-blog.github.io/2021/06/26/%E4%BA%A4%E6%98%93%E6%8F%92%E4%BB%B6%E5%AE%9E%E4%BE%8B/">
 
 
 <script id="page-configurations">
@@ -49,7 +50,7 @@
   };
 </script>
 
-  <title>Minecraft 服务器配置 | GCB的妙妙屋</title>
+  <title>交易菜单(1) - HashMap的应用 | GCB的妙妙屋</title>
   
 
 
@@ -206,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://gcb-blog.github.io/2021/06/13/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">
+    <link itemprop="mainEntityOfPage" href="http://gcb-blog.github.io/2021/06/26/%E4%BA%A4%E6%98%93%E6%8F%92%E4%BB%B6%E5%AE%9E%E4%BE%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avt.png">
@@ -219,7 +220,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Minecraft 服务器配置
+          交易菜单(1) - HashMap的应用
         </h1>
 
         <div class="post-meta">
@@ -229,14 +230,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-06-13 17:41:00" itemprop="dateCreated datePublished" datetime="2021-06-13T17:41:00+08:00">2021-06-13</time>
+              <time title="创建时间：2021-06-26 22:21:00" itemprop="dateCreated datePublished" datetime="2021-06-26T22:21:00+08:00">2021-06-26</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-26 22:26:21" itemprop="dateModified" datetime="2021-06-26T22:26:21+08:00">2021-06-26</time>
+                <time title="修改时间：2021-07-04 22:33:49" itemprop="dateModified" datetime="2021-07-04T22:33:49+08:00">2021-07-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,7 +245,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Minecraft-Server/" itemprop="url" rel="index"><span itemprop="name">Minecraft_Server</span></a>
+                  <a href="/categories/Development/" itemprop="url" rel="index"><span itemprop="name">Development</span></a>
                 </span>
             </span>
 
@@ -258,15 +259,18 @@
     
     <div class="post-body" itemprop="articleBody">
       
-        <p>上次我们讲了怎么开服，这次我们来讲一讲怎么配置服务器<br>上次有一点没有讲到的地方…</p>
-<span id="more"></span>
-<p>第一次开服一定会失败，失败后，需要打开目录下的eula.txt，将里面的eula=false改为eula=true，表示你同意了eula协议，然后重启服务器即可生成世界</p>
-<p>第二次开服后，应该会出现一个文件，叫做<code>server.properties</code>，这是服务器的配置文件</p>
-<p>第一次生成的内容应该和下面的差不多（此处以1.16.4版本为准，下面的词法分析器有问题，别管他）  </p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Minecraft server properties</span></span><br><span class="line"><span class="comment">#Fri Jun 11 20:43:29 CST 2021</span></span><br><span class="line"><span class="meta">spawn-protection</span>=<span class="string">16</span></span><br><span class="line"><span class="meta">max-tick-time</span>=<span class="string">60000</span></span><br><span class="line"><span class="meta">query.port</span>=<span class="string">25565</span></span><br><span class="line"><span class="meta">generator-settings</span>=<span class="string"></span></span><br><span class="line"><span class="meta">sync-chunk-writes</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">force-gamemode</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">allow-nether</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">enforce-whitelist</span>=<span class="string">false</span></span><br><span class="line"><span class="attr">gamemode</span>=<span class="string">survival</span></span><br><span class="line"><span class="meta">broadcast-console-to-ops</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">enable-query</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">player-idle-timeout</span>=<span class="string">0</span></span><br><span class="line"><span class="meta">text-filtering-config</span>=<span class="string"></span></span><br><span class="line"><span class="attr">difficulty</span>=<span class="string">easy</span></span><br><span class="line"><span class="meta">broadcast-rcon-to-ops</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">spawn-monsters</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">op-permission-level</span>=<span class="string">4</span></span><br><span class="line"><span class="attr">pvp</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">entity-broadcast-range-percentage</span>=<span class="string">100</span></span><br><span class="line"><span class="meta">snooper-enabled</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">level-type</span>=<span class="string">default</span></span><br><span class="line"><span class="meta">enable-status</span>=<span class="string">true</span></span><br><span class="line"><span class="attr">hardcore</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">enable-command-block</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">network-compression-threshold</span>=<span class="string">256</span></span><br><span class="line"><span class="meta">max-players</span>=<span class="string">20</span></span><br><span class="line"><span class="meta">max-world-size</span>=<span class="string">29999984</span></span><br><span class="line"><span class="meta">resource-pack-sha1</span>=<span class="string"></span></span><br><span class="line"><span class="meta">function-permission-level</span>=<span class="string">2</span></span><br><span class="line"><span class="meta">rcon.port</span>=<span class="string">25575</span></span><br><span class="line"><span class="meta">server-port</span>=<span class="string">25565</span></span><br><span class="line"><span class="attr">debug</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">server-ip</span>=<span class="string"></span></span><br><span class="line"><span class="meta">spawn-npcs</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">allow-flight</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">level-name</span>=<span class="string">world</span></span><br><span class="line"><span class="meta">view-distance</span>=<span class="string">10</span></span><br><span class="line"><span class="meta">resource-pack</span>=<span class="string"></span></span><br><span class="line"><span class="meta">spawn-animals</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">white-list</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">rcon.password</span>=<span class="string"></span></span><br><span class="line"><span class="meta">generate-structures</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">online-mode</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">max-build-height</span>=<span class="string">256</span></span><br><span class="line"><span class="meta">level-seed</span>=<span class="string"></span></span><br><span class="line"><span class="meta">prevent-proxy-connections</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">use-native-transport</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">enable-jmx-monitoring</span>=<span class="string">false</span></span><br><span class="line"><span class="attr">motd</span>=<span class="string">A Minecraft Server</span></span><br><span class="line"><span class="meta">rate-limit</span>=<span class="string">0</span></span><br><span class="line"><span class="meta">enable-rcon</span>=<span class="string">false</span></span><br></pre></td></tr></table></figure>
-<p>这里我们只讲解其中的几项<br><code>allow-nether</code>，这个选项设为false后不会生成下界<br><code>enforce-whitelist</code>，强制白名单，设为true后不在白名单中的人<strong>无法进入服务器</strong><br><code>gamemode</code>，默认游戏模式，默认值为survival，可以改为creative设置默认创造模式<br><code>difficulty</code>，难度，默认为easy<br><code>op-permission-level</code>，op权限等级，有1~4级，具体权限自行百度<br><code>pvp</code>，是否允许pvp（玩家互相伤害），true是允许，false是禁止<br><code>view-distance</code>，玩家最远的视距，建议3左右，太大会导致卡顿<br><code>max-players</code>，服务器最大人数<br><code>online-mode</code>，正版验证，默认开启（true），非正版登录玩家无法登录游戏，若设为false，则允许离线登录玩家进入<br><code>motd</code>，添加服务器后显示在名称下的描述</p>
-<p>大致的重要配置就这几项，照着需求修改即可qwq</p>
-
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="滚，密码不对！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="113af136065efc89976811250b5f4db4dc00c52731e227f17473fd45528c66d4">f6d8ce4ae30de28a72b7c240f9d3a35575bc3491b619ceda6c73ed8e47b66edf801db14fd120b6ce3f4359f7ace24a4f04bb7cc403bef39a67a713eb7e6813ef66afb4e1c3804ffae35078ef0a70718f6edfd0ed6b65fdffe6599211513a2bd147f4679f7d3b36bc4766d2f39659ef4e7832c1d881db5949851814a043044de3c26f208b4376df99e6fda20807896f72ee4d8389046758c1c53b848ec2b62efe885b24cb73c45f864ed13c9de1ae4dc582e26dd1a281fdd4d66d55df54104c5c388eeddd6ea9a4a5a8bbeb274c1168e171ec1f83f4ce1d996eddd618532155840130147e96a2261329eebb122d682a17a85dc66c5915d45e7472f5e064f84085ce9cd2d923504c71a8442acadd7576b2241eb5073944233f52bb850042099a0929c4ec8a9737323c3798744d44c6a36aa7053a5d58d9a76149c8d4fb7792e72817456ae1fd6d3f1fbc7c6f95cf8013751fd7c459612356aef96f9ccc40ec382f51b533b7d323905d8fbddb1be5ff081f8cf638bcec1eb1105e93ea7ccbae13bc1a7359213d9ab988da673206834e70f8a7491753e04ddde40c5d935e38d5bbfbea4e61af80e5afc5772133e86e4a5fb306384034258b594316102d5ec7307294eee9cd73f04bc9cff37cdffbdbee044af1ebded36a8015e0ce27c0f802564416748e567d6b88e97611b2ef615d00a71178cc5ef0ec2138675e63d6dd3df25708e18b6d173a60b0c7d35c327f5f3863c8bfb0be3535fd256aba8d329a149515a88523a57e1939435d0afc3e9c7b3d3f6f33a90a52b8b0d90826e648ba3ecfb9dd437353cea79ae719aae3c679e03ca43a288aa97ff837aeeb5dfed1ce80690f6802d8f5e1f61ef6529a3daa441475e719a25b626ef4511d564326479e88c13f7e41836f74b029db124d76a91f1e64f2c0061bf4444cfad6da1a6fe90bdd26fd6c94fc0c635f2724a5eff920cb86f2fa97c32d09045c6d2819cb1391e74a76f3b8f9a7b8e808db34ae67a025e2ab4944e83da9693e91ed2e55e0f514de3991fdb176657e97e931c5a297d42a2dd93eb9812a60ee28abf6a3a4b325e1917c3e94f8059900f4e5fdb57bf31637976788a65d2783d6ed8d333643265d812a060377697fb9af29d1726babe183a42fe71fa36c79245bf62534930982e3cb30db11c2fd02c9763fc42d1bcf7162f002e53732fa0361aef282af8f4ce0252f944526d30a257aa341ef0d0ccc542039f8bf567d7f83aa0b9f61348916285c0ec0e261e132f95ce7da884f11bb0972f6e8173b2e2f2d9aedf8736e049e4fdf0ca82c5c15599356387adfb6d64a6288dea96169cf22b2d746666f5b1d67608e206167d1a48e64a9a8199eda55ca155e75e9cd0a5fc3dcf12888de249534a0b70c8494520c27356fcdf808cbb5a3226340d2eacb71bb448d424ecff147752b72cb1b286c34d77425547be7fa4bf0a4bdc0c60a9884e73fe5aeacc782d1a6db5f25d4082ca2cd32ccd03d61628d07c7db767af7b05648a7d4fdffb32448e9cc7b243ad5e9a06ba0210b05acca28735ce5061045af0a5f5b6f470ff3635a240a8bb99dd3639314cd2a84930059e325648cbbd79f7e57db7794410616fe29c1660c3b920dafd65877bc35e1df89851f40806c55bc7bd3a8e58241f50f9d3bcf8ee7b304fbbe78df305c9984be47b338d5270bc14bd9f3880c1ac72f0c44a81de38182ebe8c259aba6ac18142aadce43c7017af851d3511770c273c3e15e2f5e07ed441496c7cceba4eb0502882736ddce67ca8bc59dada49b35b4d1559e8467c0a49291cbc961964a02cf34cdd625421b07b002fa9cd048a43e78a5a6dc9a834bf1236cd8f4ead268f61e06099154a88b9630bd83891bb9f25a268bd803744a3259377f14a319abef550428ee4f36156c2464bf2ae5209579adb40a3241f09ad20c94e1310a38153e81de16fc3942f2f52f0bba2a54d999382bd469eff15cb786b1746151f64ca54a95cd5ba56c8ddc8b5c9454c77ea4932c13b274d3613eab479a5c68dca162d805063fd0e53cf75969d3e7681a60a4dd5bd0e1048ea7255c0224955eebaedca5f562e69dff88598e9d86f4abf8fce5b8459e2893121f3a1c6533646f95094372f4e34b31c4116230dced31039075009f32086c5f59ca28b5d7bace0b5880bbb675f055bf533fc72ce2e94a5222e0a5fdef8423a689d0f9a8880483336e07f5f473744d32585906be517f81b5972889c42c5df42b0807be8ffec4a2b2d3fdbb63eb43a1becc80da326cdc7fda4cdf8748ede4c9d5c23ffa3ad5c9c8645f712b462e0c7322a1592c33f05a0fc08b26b1c03af5f33b2ae1bd4e2df5a721cda107cf32b08873cf3b7d1658cd55c3866f0aeed9d46ee00c363b399f94c9826fe7dca3bf2a0b6040531afbcbce74e3fd7c7092dc85d3b4f11476875c4cbd81f2a9df6cf53531863ba9353a11e0edc4d60ce258cf8b4b09e5e433f0edae742d55bb67c073fd105ee75b1ee18f58ed69ca33753f1fbf21d9850d981412ef0de455895e2e2dd90e213a56b85c5bfa7284da35033d36e58bd5a047025a44d1fb16d5a9b3e2182d562dd378672ba762c0b0a9799e90d0a155d1a5001c0141f9f0dc34938cdd79ada18ae877cb237ebdf3e2e812d87792a4d4a348c1c6e8316fa8109146893a6a262799c837a82a3a07feca105f6830a3feac4e5f26038c26355f8d4b5e2ea5f6f57a2b1f95ead7559ac509a466d5b2fd6dfe69b1b5ea55382d820b1c7e9125cfee007f3425639d53a901eadd2cc0004a5b83476b7b1e4e552ab9775274904dbff242be9ca5de2297bfb3f32a45d84bba251c9e8c7f35dfaaad2ba8fa8126537231a7c5ad080b025bbdf4ee36e3f6a7d1f2013ad0a042b32c52d5cb89bd771477e86c06dd0dc87c4231105e57e631beeddd1c524bacd544b1e46f4457eccff0205aa2f7084b414727ee37ce97fb71b44b36247a15b7474a31e1b1be7ee81b2a4c5d18c1949f5c47f0b86899281de137bccacf3cd34f3012345f628182c1846225199a32a741fd01c0fa9ce4049315cb5ead0b8ba23960f0469368751c7d87415ad77d8654da52b58be20a4e8c8744bf10994df9225cdbc558b1557de04e68585fdf6d47d14cd8df20c7aa8bdfa65b40594762dfe8c897bb761c7059f902021d82ac84f0996ed3eaee04e92ff5c02c96111367a3c18a1cb2f0a5bc8261efe6fb07526be69dd6804a80342a8230e333714f55fec9b095403a1f9d7e644838a9a0de440e61404c8b951a4aacae95b8779c1b17b5f7a362f822b8c6732b25e008d0175f50921c951463a93dc910c000ec9be8b76c7d11d4e3207a1c6f1830830f0617fc7b04fdbcaf09b090bf2bcb6dbf6e2ee8e38461474fa6688e315a78c2212b761ae7fb4129cf91c3eb61cbe5c468ae1e9f723e580b683e0d85588389920daf76d0b7faa2e02e6fa4e9da58d651a6cb0243e614d50fa76bd24017567821f430c6ab20f99900b47f694ecffb0ca2fc1a7a7a9f24254071656eaa5dec30fa755fc4dc2d31eaac709900feb4630e9249a186c8001c4e2490447511d90e068c84318b08914aeef8f0d46d168e976bf5d8a78ceab338186e5fd604d6b6a0b76ffb76b19495ed32cb86bf734cfb055518c3e2aea3613cf11a3f296630750711a04f8c41b919404852d8fbf560f2fc49e1bad81b65e8ff97f1886064abbd920d6b42166a3f572a418709d4a2729965e7d07e6b46cf7c2a7be21e2bf8f7f21205b4bda884f29048c2bff5ae8fa62fd2895790bcf1831b74f373883d02b658d78f9b1c6fc988c44bb2a4d64bb48efb06c025bd2b6561a0a1a325b3727a1e92b630b37fb85c374e755996e8e732b5c4478e98b1b3b4f6358efe9aac25d471ffe92a5d71fc39d636fae30c1906619f3f7834c05e212d6acb4cf910776089634d2229e5e0a6116e44c4d6dad990096a20d5f607dc6225ee53d947a01e9ae6e31ecaeaec72f251f2d5c7eced4162390c5afc528c29cc3061df8e59d23c6eb7cfff7a0739e63642bad4c96d4a63b804a40a7b46cd0abe2bc30f9464f5dca4ddd0ab10754225b107db317e9021f7641fc33e1f67bf5f839aac08c7a29c61b735dfb2d4ccf0355e446a235f7db5e1f73fe216ad73fc060ca952ad2fa4c9d5f333f77e40df9cde7941d8ac996e90b29914f65937e0740b0d309a955a5af6b4601f34c21b6617a1352de24f2b9f6f7b70236020e76cc5078d6846ad1b11d4d2eb5b75e1474576d9e08e0308699a896f52e4ce886b3d152b28ddffe5fcffdcb90a271bb9fbec464a0b22eaabf040047dee662fd35793935974c0e23449a6a19b8c0df353aa1eefd521b8d7cec0b6df052a6cbfe36a0ce2989ba71c1230778b04dd71f09740a1901710f9774dd942f2cf422631d2082b417ad8a8882794529aa61431bc467b1c3ba9533de87f8c64bb262a86e85874d98772722786ac0926d02f24bc09118284e7feb602887a8cf08c5cfab358a745be42935b101160f4e2a7428e2ad9a9fb04bed965a2fcb2120d316b180e359c2bf64dc9ebb31c742d244f40a4913c6518f6c2e7d76bd3cbfa3330703d7c0b18c161ac6b3bddc6c27c5e5a6e416e3d5f4936217d577a8ddee733167c54cabc1bf40727690c61221818dc440094b713b4bf84e390b3f9cbc22c8f0b55c3bbbbff85edf7ff481dfc1d9a56b4a08c9b026e5c8e1b8d15db554c4781f5b01bb634fd1486a34097a843635c105349fdce74a8fb1434fb4c87951d48c0b00cc23a4bf2927dc1b50d19a9b98fb71e07b7d70bb7726bf6e03248ed6fd008eaaf5ebc88413d6af22765e72effea99af3b3f31d57bc614433f167cf79303cbf48e99ccf9dddce52a6df107770353aabc19179b8db09010ed3ecc01554af854e1efd034bad58f0147fb424ae7043179ccf68951584f1c0841af70ad84f8fc3b65591bedd3e1d02612db828688162ccd16837a9b0d79ba5a1346a81165cf38969e1fc73057dee6238c63312bcefc6f43236d59b99203d87247b4a5282c41b404e65e40c9b5986954db7c336b271832af0291c8940d62bc8f1d87ea9baf83816177e543bfc9b694c84fe6c3e73adf70dabe9a90724459bc53c32f37ffc8d19862dd2197f238aa4abfc0f4d524807aba48be12af3b3b89d718a8237baf6f116ec6d9ce2569aa611ee96f7df9a7e85489e35cd3fe285d08d0c8212432216d0e3657f4e7137d3d3928f9e3767901278553ff7f32260849d6722605361e52bce7d60559e09555dae01a2b07d5a046e40ba9d819bfdf5834aff6afd064bdb9d7c40627baa38ba868b8a201e00f62ae1ab17bc92175d8a611f19b73cd1e2e0ada99d1e80b453887d6efcad5eb08f8ac7e3548fad507d653e86a458fb49ef2350987732af4eb8709219ad7be0b0a03276ebfcc27a98cf4319ca2379f9fd33530a79e7ddcc108d6d09f3577dadad1512bad9487ad84ff59d26b2df5265139955f6db85e87e1829eadb56e13e5a5a6943c6d400ceec74bb1490f0cded216edd514592f309f089bc202db468ec1a1bdde816b7b7b8d99c5eaaaab1774bb9d15ebb78423ebe01705e2b8873533d6c51e134c41865fbb358ede214938cddd65c9167b5db798af351f2177b9cce331b393dd</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点击这里输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -306,7 +310,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://gcb-blog.github.io/2021/06/13/Minecraft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/" title="Minecraft 服务器配置">http://gcb-blog.github.io/2021/06/13/Minecraft-服务器配置/</a>
+    <a href="http://gcb-blog.github.io/2021/06/26/%E4%BA%A4%E6%98%93%E6%8F%92%E4%BB%B6%E5%AE%9E%E4%BE%8B/" title="交易菜单(1) - HashMap的应用">http://gcb-blog.github.io/2021/06/26/交易插件实例/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -317,10 +321,11 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Server/" rel="tag"># Server</a>
+              <a href="/tags/Java/" rel="tag"># Java</a>
               <a href="/tags/Minecraft/" rel="tag"># Minecraft</a>
               <a href="/tags/Tutorials/" rel="tag"># Tutorials</a>
-              <a href="/tags/Config/" rel="tag"># Config</a>
+              <a href="/tags/Plugin/" rel="tag"># Plugin</a>
+              <a href="/tags/Development/" rel="tag"># Development</a>
           </div>
 
         
@@ -334,13 +339,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/06/13/Minecraft-%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/" rel="prev" title="Minecraft 开服教程">
-      <i class="fa fa-chevron-left"></i> Minecraft 开服教程
+    <a href="/2021/06/14/HashMap/" rel="prev" title="HashMap">
+      <i class="fa fa-chevron-left"></i> HashMap
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/06/14/set%E9%9B%86%E5%90%88/" rel="next" title="set集合">
-      set集合 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -613,7 +615,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'Blog-talk',
       owner       : 'GCB-Blog',
       admin       : ['GCB-Blog'],
-      id          : '036ae79052ec63ba571f5a396d0a4649',
+      id          : 'af0024e31154eab6d432b034cff16c77',
         language: 'zh-CN',
       distractionFreeMode: false
     });
